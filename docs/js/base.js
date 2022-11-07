@@ -451,7 +451,7 @@ function nextPiece() {
 	let tryID = 0;
 	if ( lineup.length == 0 ) {
 		lineup = lineUpQCC();
-		dlg.toggleBorders = 'hide';		
+//		dlg.toggleBorders = 'hide';
 		if ( lineup[0] === false ) {
 			lineup.shift();
 			currentID = lineup[0];
@@ -608,7 +608,7 @@ function showStartPrompt() {
 	dlg.promptAnimated = {
 		headline : 'Lerne Afrika besser kennen!',
 		topText : 'Beantworte die Rätselfragen und erfahre dabei Erstaunliches und Wissenswertes zu den Staaten Afrikas. Schiebe dann die Staaten an ihren Platz im Afrika-Puzzle. (Das Puzzlestück passt immer nur in den sichtbaren Kartenausschnitt.)',
-		bottomText : 'Falls Du für ein Puzzle-Teil eine Hilfestellung möchtest, kannst Du mit der <i class="fa af-africa-borders"></i>Taste die Ländergrenzen einblenden. Mit der <i class="fa fa-fast-forward"></i>Taste kannst Du einzelne Staaten überspringen, wenn Du nicht gleich ihren richtigen Platz findest. Du bekommst später erneut Gelegenheit, diese Staaten ins Puzzle einzufügen.',
+		bottomText : 'Falls Du eine größere Herausforderung suchst, kannst Du mit der <i class="fa af-africa"></i>Taste die Ländergrenzen ausblenden. Mit der <i class="fa fa-fast-forward"></i>Taste kannst Du einzelne Staaten überspringen, wenn Du nicht gleich ihren richtigen Platz findest. Du bekommst später erneut Gelegenheit, diese Staaten ins Puzzle einzufügen.',
 		buttons : 0,
 		buttonLabel : '<i id="promptStart" class="fa fa-play"></i><span>Puzzle starten</span>',
 		buttonClickAction : 'currentID=nextPiece();',
