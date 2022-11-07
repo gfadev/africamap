@@ -484,6 +484,7 @@ window.onload = function() {
 	dlg = new Dialogue();
 	dlg.view = 'reset';
 	dlg.controlButtonAction = 'start';
+	dlg.toggleBorders = 'show'; // show state borders by default
 	if ( window.innerWidth < 720 || window.innerHeight < 560 ) {
 		const t = setTimeout( function() {
 			dlg.gfaNav.style.top = '-120px';
