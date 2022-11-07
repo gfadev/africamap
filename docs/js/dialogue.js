@@ -430,7 +430,7 @@ export class Dialogue {
 				shiftMap.x = .85 * window.innerWidth;
 				shiftMap.y = (renderedHeight) - window.innerHeight;
 			}
-			if ( window.innerWidth <= 560 ) this.toleranceVar = 6; else this.toleranceVar = 4;		
+			if ( window.innerWidth <= 560 ) this.toleranceVar = 9; else this.toleranceVar = 6;		
 		} else { 
 			shiftMap.svgmap.style.transform = "scale(1,1)";		
 			if ( wRatio > 2 ) {
@@ -453,7 +453,7 @@ export class Dialogue {
 					this.moveButton.parentNode.style.display = 'none';
 				}
 			}	
-			if ( window.innerWidth <= 940 ) this.toleranceVar = 2; else this.toleranceVar = 0;
+			if ( window.innerWidth <= 940 ) this.toleranceVar = 3; else this.toleranceVar = 0;
 		}
 		shiftMap.svgmap.style.top = 0;
 		shiftMap.storeLeft = shiftMap.svgmap.style.left;
